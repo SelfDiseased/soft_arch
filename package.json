@@ -1,0 +1,26 @@
+{
+  "name": "soft_arch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SelfDiseased/soft_arch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SelfDiseased/soft_arch/issues"
+  },
+  "homepage": "https://github.com/SelfDiseased/soft_arch#readme",
+  "devDependencies": {
+    "@types/node": "^20.2.4",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {}
+}
