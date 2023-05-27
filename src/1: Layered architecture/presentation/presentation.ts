@@ -4,7 +4,7 @@ import { BusinessLogicLayer } from "../domain/business-logic";
 
 export class PresentationLayer {
   private readonly businessLogicLayer;
-  private rl;
+  private readonly rl;
 
   constructor() {
     this.businessLogicLayer = new BusinessLogicLayer();
