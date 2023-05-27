@@ -1,11 +1,7 @@
+import { data } from "./data";
+
 export class DatabaseLayer {
-  private readonly data = [
-    {
-      id: 1,
-      fullName: "Vito Scaletta",
-      email: "vito@kpi.lll.ua",
-    },
-  ];
+  private readonly data = data;
 
   getData() {
     return this.data;

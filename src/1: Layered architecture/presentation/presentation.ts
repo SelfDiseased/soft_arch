@@ -4,7 +4,7 @@ import { BusinessLogicLayer } from "../domain/business-logic";
 
 export class PresentationLayer {
   private readonly businessLogicLayer;
-  private readonly rl;
+  private rl;
 
   constructor() {
     this.businessLogicLayer = new BusinessLogicLayer();
@@ -29,5 +29,7 @@ export class PresentationLayer {
 
     console.log("Entity was found:");
     console.log(entity);
+
+    return entity;
   }
 }
