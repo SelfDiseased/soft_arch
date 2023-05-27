@@ -4,10 +4,6 @@ import { PresentationLayer } from "../presentation";
 import { data } from "../../database/data";
 
 describe("PresentationLayer", () => {
-  beforeEach(() => {
-    jest.resetModules();
-  });
-
   jest.spyOn(readline, "createInterface").mockImplementation(() => {
     return {
       question: (text: string, callback: any) => callback(1),
