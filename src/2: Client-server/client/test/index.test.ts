@@ -6,9 +6,11 @@ describe("server", () => {
   const mockedTextFromServer = "text from server";
 
   jest.spyOn(axios, "get").mockImplementation(() => {
-    return {
-      data: mockedTextFromServer,
-    } as any;
+    return new Promise((resolve) =>
+      resolve({
+        data: mockedTextFromServer,
+      } as any)
+    );
   });
 
   const client = new Client();

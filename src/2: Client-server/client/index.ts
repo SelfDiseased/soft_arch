@@ -9,7 +9,3 @@ export class Client {
     return data;
   }
 }
-
-const client = new Client();
-
-client.connectToServer().then();
