@@ -8,6 +8,10 @@ export class Broker {
     return acc;
   }, {} as Record<Actions, Subscriber[]>);
 
+  getSubscribers(action: Actions): Subscriber[] {
+    return this.actionsSubscribers[action];
+  }
+
   subscribe(subscriber: Subscriber, action: Actions): void {
     this.actionsSubscribers[action] = (
       this.actionsSubscribers[action] || []
