@@ -1,0 +1,5 @@
+export enum Actions {
+  NEW_ARTICLE = "NEW_ARTICLE",
+  WEEKLY_NEWS = "WEEKLY_NEWS",
+  BREAKING_NEWS = "BREAKING_NEWS",
+}
