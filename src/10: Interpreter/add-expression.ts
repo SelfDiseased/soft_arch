@@ -10,7 +10,7 @@ export class AddExpression implements AbstractExpression {
     this.right = right;
   }
 
-  interpret(context: Context): number {
+  interpret(context?: Context): number {
     return this.left.interpret(context) + this.right.interpret(context);
   }
 }
