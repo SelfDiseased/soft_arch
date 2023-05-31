@@ -1,5 +1,3 @@
-import { NumeralExpression } from "../numeral-expression";
-import { SubstractExpression } from "../substract-expression";
 import { Client } from "../client";
 
 describe("Client", () => {
